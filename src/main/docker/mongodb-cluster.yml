@@ -1,0 +1,16 @@
+version: '2'
+services:
+  ecopetroljp-mongodb:
+    image: mongo:4.2.7
+    ports:
+      - '27017:27017'
+    command: mongos --configdb csvr/ecopetroljp-mongodb-config --bind_ip 0.0.0.0
+  ecopetroljp-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --shardsvr --replSet rs1
+  ecopetroljp-mongodb-config:
+    image: mongo:4.2.7
+    container_name: ecopetroljp-mongodb-config
+    command: mongod --configsvr --dbpath /data/db --replSet csvr

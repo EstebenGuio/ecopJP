@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.ecopetrol.mstemp",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.1",
+    "applicationType": "microservice",
+    "baseName": "ecopetrolJP",
+    "packageName": "com.ecopetrol.mstemp",
+    "packageFolder": "com/ecopetrol/mstemp",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "redis",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MzMzZDQ3MjYyZjdiZDVhMzIxNjE5MTAwNTUzZDk3MzQ4MGU4MWY3OWIwYTg3NGE1YzA1ZTAwOTZhMzg5MzRlMjUzMWM1ZTVkOGQzNmZkMTY1MTM4MzFjM2M2Y2MwODdiYzdiNDU3NGNiZDFlMGFiNzZkODIwNWRmYjFlYWY1MjQ=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1595269006316,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": ["en", "pt-pt", "es"],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
